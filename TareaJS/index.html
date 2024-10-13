@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta autor="Angel Pérez" content="Quiz Interactivo">
+    <title>Quiz Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Pantalla de Inicio -->
+    <div id="inicio" class="pantalla">
+        <h1>Bienvenido al Quiz Interactivo</h1>
+        <p>Pon a prueba tus conocimientos respondiendo las siguientes preguntas.</p>
+        <button id="comenzar-btn">Comenzar Quiz</button>
+    </div>
+
+    <!-- Pantalla de Preguntas -->
+    <div id="preguntas" class="pantalla ocultar">
+        <div class="contenedor-pregunta">
+            <h2 id="pregunta-texto">Pregunta aquí</h2>
+            <ul id="opciones-lista">
+                <!-- Opciones de respuesta se generarán dinámicamente -->
+            </ul>
+        </div>
+        <button id="siguiente-btn" class="ocultar">Siguiente</button>
+        <div id="temporizador">Tiempo restante: <span id="tiempo-restante">30</span> segundos</div>
+        <div id="retroalimentacion" class="retroalimentacion ocultar"></div>
+        <div id="barra-progreso-container">
+            <div id="barra-progreso"></div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Resultados -->
+    <div id="resultados" class="pantalla ocultar">
+        <h2>¡Has completado el Quiz!</h2>
+        <p>Tu puntaje: <span id="puntaje-final"></span> de <span id="total-preguntas"></span></p>
+        <button id="reiniciar-btn">Reiniciar Quiz</button>
+        <p>Tu puntaje: <span id="puntaje-final"></span> de <span id="total-preguntas"></span></p>
+        <p id="mensaje-final"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
