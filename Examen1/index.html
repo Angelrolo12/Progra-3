@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Energética - Datacenter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Gestión Energética</h1>
+    </header>
+    <section id="autenticacion">
+        <h2>Autenticación de Usuario</h2>
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+        <button onclick="autenticarUsuario()">Iniciar Sesión</button>
+    </section>
+    <section id="registroDatos" style="display:none;">
+        <h2>Registro de Toma de Datos</h2>
+        <label for="equipo">Selecciona el equipo:</label>
+        <select id="equipo" onchange="mostrarCamposEspecificos()">
+            <option value="">--Seleccionar grupo de equipo--</option>
+            <option value="Aires Acondicionados">Aires Acondicionados</option>
+            <option value="UPS">UPS</option>
+            <option value="Generadores">Generadores</option>
+            <option value="Transferencias">Transferencias</option>
+        </select>
+        <select id="subequipo" style="display: none;">
+            <option value="">--Seleccionar equipo específico--</option>
+        </select>
+        <div id="camposEspecificos"></div>
+        <button onclick="registrarDatos()">Registrar Datos</button>
+        <h2>Datos Registrados</h2>
+        <table id="tablaRegistros">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Equipo</th>
+                    <th>Mediciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="imprimir">Imprimir Reporte</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
