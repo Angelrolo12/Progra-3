@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos fomularios</title>
+</head>
+
+<body>
+    <fieldset><!--realiza un recuadro-->
+        <legend>Formulario de datos</legend><!--Genera un titulo sobre el recuadro-->
+        <label>Usuario:</label>
+        <input type="text" required><br><br><!--required el espacio es obligatorio-->
+        <label>Usuario 2:</label>
+        <input type="text" autofocus><br><br><!--define el curso en el area a escribir-->
+        <label>Bloqueado</label>
+        <input type="text" disabled><br><br><!--bloquea el campo-->
+        <label>Solo lectura</label>
+        <input type="text" readonly><br><br><!--solo puede leer-->
+        <label for="">Email:</label>
+        <input type="email" required><br><br>
+        <label>Contraseña</label>
+        <input type="password" required placeholder="Contraseña"><br><br>
+        <input type="number" min="0" max="20" step="5"><!--minimo maximo saltos de numeros -->
+        <button>Enviar</button>
+    </fieldset>
+
+</body>
+
+</html>

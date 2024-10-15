@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        Horizontal = fila<br>
+        Vertical = columna<br>
+        tr = fila<br>
+        td = columna<br>
+        caption = titulo tabla<br>
+        th = descrincion columna<br>
+        thead = <br>
+        tbody = <br>
+        tfoot = <br>
+        colspan = combinar columna
+        rowspan = combinar filas
+    </p>
+    <table border="1">
+        <caption>Tabla 1</caption>
+        <tr>
+            <th>Titulo 1</th>
+            <th>Titulo 2</th>
+        </tr>
+        <tr>
+            <td>Columna 1</td>
+            <td>Columna 2</td>
+        </tr>
+        <tr>
+            <td>Columna 3</td>
+            <td>Columna 4</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>Tabla 2</caption>
+        <tr>
+            <td>Columna 1</td>
+            <td colspan="2">Columna 2 y 3</td>
+        </tr>
+        <tr>
+            <td>Columna 4</td>
+            <td>Columna 5</td>
+            <td>Columna 6</td>
+        </tr>
+        <table border="1">
+            <caption>Tabla 3</caption>
+            <tr>
+                <td rowspan="2">Columna 1 y 4</td>
+                <td>Columna 2</td>
+                <td>Columna 2</td>
+            </tr>
+            <tr>
+                <td>Columna 5</td>
+                <td>Columna 6</td>
+            </tr>
+        </table>
+</body>
+
+</html>
